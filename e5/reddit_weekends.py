@@ -113,11 +113,8 @@ def main():
 
 
 	# fix3: a non-parametric test might save us
+	utestPvalue = stats.mannwhitneyu(weekdays['comment_count'],weekends['comment_count']).pvalue
 	
-	
-
-
-
 
 	print(OUTPUT_TEMPLATE.format(
 	        initial_ttest_p=ttestPvalue,
@@ -131,7 +128,7 @@ def main():
 	        weekly_weekend_normality_p=norWeekendsMean,
 	        weekly_levene_p=levMean,
 	        weekly_ttest_p=ttestMean,
-	        utest_p=0,
+	        utest_p=utestPvalue,
 	    ))
 if __name__ == '__main__':
 	main()
