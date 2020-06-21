@@ -1,6 +1,7 @@
 Q1: Which of the four transforms suggested got you the closest to satisfying the assumptions of a T-test?
 
 ans: np.sqrt() will be the closest.
+
 *********************************************************************************************
 Q2: I gave imprecise English translations of what the by-week test, and the Mann-Whitney test were actually testing. Do the same for the original T-test, and for the transformed data T-test. That is, describe what the conclusion would be if you could reject the null hypothesis in those tests.
 
