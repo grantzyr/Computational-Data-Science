@@ -14,6 +14,7 @@ month_ppt_avg = totals.sum(axis = 0) / counts.sum(axis = 0)
 
 # give the average precipitation (daily precipitation averaged over the month) for each city by printing the array.
 city_ppt_avg = totals.sum(axis = 1) / counts.sum(axis = 1)
+
 # print(city_ppt_avg)
 
 print("City with lowest total precipitation:\n", lowest_city)
