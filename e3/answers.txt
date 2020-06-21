@@ -1,0 +1,9 @@
+1. When smoothing the CPU temperature, do you think you got a better result with LOESS or Kalman smoothing? What differences did you notice? 
+
+ans:
+LOESS looks better but I think it's because LOESS doesn't think a lot about the outliers. So I think Kalman is better than LOESS if a comprehensive comparison is made, because it considers more parameters and the data is more real and accurate.
+
+2. In the GPX files, you might have also noticed other data about the observations: time stamp, course (heading in degrees from north, 0–360), speed (in m/s). How could those have been used to make a better prediction about the “next” latitude and longitude? [Aside: I tried, and it didn't help much. I think the values are calculated from the latitude/longitude by the app: they don't really add much new information.] 
+
+ans:
+In physics, we learned how to figure out the path of motion by direction, speed, and time of motion. We can use a similar approach, we know the time, the course and the speed, and we can use that to predict the distance in this direction, to estimate the next coordinate.
