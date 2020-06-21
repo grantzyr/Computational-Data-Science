@@ -1,0 +1,8 @@
+
+Question 1:
+In the hint above, what is the result of the calculation data['timestamp']*fit.slope + fit.intercept? What is the type, and describe the values.
+Ans: the result of the calculation is predicted rating. the type is float. The predicted score is on the rise based on data from May 2016 to May 2019.
+
+Question 2:
+In the same hint, why does this produce a fit line on the graph? Why are the created_at values and timestamp values paired correctly to make points on the plot?
+Ans: Because this is the same thing as y = kx + b, where timestamp(x) is the independent variable, fit.slope(k) is the slope, and fit.intercept(b) is the y-intercept. predicted rating will change when timestamp changes. timestamp and created_at could paired correctly because they are actually same thing, they only got different format.
